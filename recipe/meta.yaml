@@ -1,14 +1,12 @@
-{% set name = "salvus_mesher_lite" %}
 {% set version = "1.0.6" %}
-{% set sha256 = "7845275d1bd627f6358c586c44feb479e973ea3e6aea808ed65f373c827e3ac8" %}
 
 package:
-  name: {{ name|lower }}
+  name: salvus_mesher_lite
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/s/salvus_mesher_lite/salvus_mesher_lite-{{ version }}.tar.gz
+  sha256: 7845275d1bd627f6358c586c44feb479e973ea3e6aea808ed65f373c827e3ac8
 
 build:
   number: 0
@@ -41,6 +39,7 @@ test:
 
 about:
   home: https://salvus.io
+  # https://gitlab.com/Salvus/SalvusMesherLite/issues/1
   license: GPL-3.0
   summary: 'Salvus mesher for AxiSEM meshes'
 
